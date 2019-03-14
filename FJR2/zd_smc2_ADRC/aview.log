@@ -1,0 +1,23 @@
+! Adams/View Adams 2015 (建立 Jun 29 2015)
+! 图像:  OpenGL
+! 输入命令'?'或 'help'。
+model display model=.MODEL_SEA20 view=all
+! >> model display model=.MODEL_SEA20 view=all
+interface dialog undisplay dialog=.gui.new_start_session_panel
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!  SELECT OBJECT
+undo begin
+default coordinate_system default_coordinate_system=.MODEL_SEA20
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+view manage orient view=top   up_axis=(.MDI.up_axis) forward_axis=(.MDI.forward_axis)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MODIFY View Zoom
+undo begin
+view zoom view=.gui.main.front zoom=0.412360689
+undo end
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+

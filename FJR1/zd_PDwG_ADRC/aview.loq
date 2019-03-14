@@ -1,0 +1,6 @@
+! Adams/View Adams 2015 (建立 Jun 29 2015)
+! 图像:  OpenGL
+! 输入命令'?'或 'help'。
+model display model=.MODEL_SEA20 view=all
+! >> model display model=.MODEL_SEA20 view=all
+interface dialog undisplay dialog=.gui.new_start_session_panel
